@@ -42,6 +42,7 @@ const useStyles = makeStyles((theme) => {
     },
     appbar: {
       width: `calc(100% - ${drawerWidth}px)`,
+      marginLeft: drawerWidth,
     },
     toolbar: theme.mixins.toolbar,
     date: {
@@ -74,7 +75,7 @@ const Layout = ({ children }) => {
 
   return (
     <div className={classes.root}>
-      <AppBar className={classes.appbar} elevation={0}>
+      <AppBar position="fixed" className={classes.appbar} elevation={0}>
         <Toolbar>
           <Typography className={classes.date}>
             Today is the {format(new Date(), "do MMMM Y")}

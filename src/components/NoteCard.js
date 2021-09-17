@@ -33,7 +33,7 @@ export default function NoteCard({ note, handleDelete }) {
 
   return (
     <div>
-      <Card elevation={1} className={classes.test}>
+      <Card elevation={1}>
         <CardHeader
           avatar={
             <Avatar className={classes.avatar}>
